@@ -1,0 +1,70 @@
+body {
+    font-family: roboto;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                        "main main aside"
+                        "footer footer footer";
+}
+
+
+
+header {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 20px;
+    grid-area: header;
+}
+
+nav {
+    background-color: white;
+    color: black;
+    grid-area: nav;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+   }
+
+main {
+    background-image: url("cherryblossam.png");
+    background-repeat: no-repeat;
+    grid-area: main;
+}
+
+aside {
+    display:block;
+    background-color: pink;
+    grid-area: aside;
+}
+
+aside ul {
+
+    list-style-type:none;
+}
+
+img.linkedin {
+    height: 42px;
+    padding:7px;
+}
+
+img.github {
+    height: 60px;
+    padding:7px;
+}
+
+img.email {
+    height: 40px;
+    padding:7px;
+}
+
+footer {
+    background-color:  rgb(61, 61, 61);
+    grid-area: footer;
+
+}
