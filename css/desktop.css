@@ -31,6 +31,22 @@ nav ul {
     text-align: center;
    }
 
+   nav ul ul {
+    position: absolute;
+    background-color: white;
+    padding: 7px;
+    width: 20%;
+    opacity:0;
+    transition: opacity 0.3s ease-in;
+    pointer-events: none;
+
+   }
+
+   nav > ul > li:hover ul {
+    opacity:1;
+    pointer-events: auto;
+   }
+
 main {
     background-image: url("cherryblossam.png");
     background-repeat: no-repeat;
