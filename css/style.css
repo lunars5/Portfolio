@@ -40,6 +40,16 @@ main {
     grid-area: main;
 }
 
+.welcome {
+    padding: 235px;
+    padding-left:50%;
+    padding-right:50%;
+    background-image: url("cherryblossam.png");
+    background-repeat: no-repeat;
+    grid-area: main;
+}
+
+
 aside {
     background-color: pink;
     grid-area: aside;
