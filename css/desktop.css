@@ -71,18 +71,37 @@ main {
 }
 
 .profile {
+    text-align: center;
     background-color: rgb(71, 71, 71);
     color: white;
-    padding: 20px;
+    padding: 30px;
     grid-area: profile;
+    border-width: 7px;
+    border-style: dotted;
+    border-color: hotpink;
 }
-
 
 .education{
     background-color: rgb(61, 61, 61);
     color: white;
     padding: 20px;
     grid-area: education;
+}
+
+.education h2 {
+   text-decoration: underline;
+}
+
+.office h2 {
+text-decoration: underline;
+}
+
+.education h3 {
+text-decoration: underline;
+}
+
+.office h3 {
+text-decoration: underline;
 }
 .office{
     background-color: rgb(61, 61, 61);
@@ -93,15 +112,27 @@ main {
 
 .skills {
     background-color: pink;
-    color: grey;
+    color: rgb(94, 94, 94);
     padding: 20px;
     grid-area: skills;
+    border-width: 10px;
+    border-style: solid;
+    border-top-color: purple;
+    border-right-color: salmon;
+    border-left-color: salmon;
+    border-bottom-color:purple;
 }
 .hobbies {
     background-color: lightblue;
-    color: grey;
+    color: rgb(94, 94, 94);
     padding: 20px;
     grid-area: hobbies;
+    border-width: 10px;
+    border-left-width:0px;
+    border-style:solid;
+    border-top-color:purple;
+    border-right-color:salmon;
+    border-bottom-color: purple;
 }
 
 aside {
@@ -114,8 +145,6 @@ aside ul {
 
     list-style-type:none;
 }
-
-
 
 img.linkedin {
     height: 42px;
