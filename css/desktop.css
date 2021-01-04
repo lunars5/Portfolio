@@ -65,24 +65,19 @@ main {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
-    grid-template-areas: "profile profile profile me"
+    grid-template-areas: "profile profile profile profile"
                          "education education office office"
                         "skills skills hobbies hobbies";
 }
 
 .profile {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(71, 71, 71);
     color: white;
     padding: 20px;
     grid-area: profile;
 }
 
-.me {
-    background-color: rgb(61, 61, 61);
-    height: 25%;
-    padding:20px;
-    grid-area: me;
-}
+
 .education{
     background-color: rgb(61, 61, 61);
     color: white;
@@ -97,14 +92,14 @@ main {
 }
 
 .skills {
-    background-color: rgb(61, 61, 61);
-    color: white;
+    background-color: pink;
+    color: grey;
     padding: 20px;
     grid-area: skills;
 }
 .hobbies {
-    background-color: rgb(61, 61, 61);
-    color: white;
+    background-color: lightblue;
+    color: grey;
     padding: 20px;
     grid-area: hobbies;
 }
