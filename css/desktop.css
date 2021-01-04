@@ -115,24 +115,19 @@ text-decoration: underline;
     color: rgb(94, 94, 94);
     padding: 20px;
     grid-area: skills;
-    border-width: 10px;
-    border-style: solid;
-    border-top-color: purple;
-    border-right-color: salmon;
-    border-left-color: salmon;
-    border-bottom-color:purple;
+    border-width: 3.3px;
+    border-style: dashed;
+    border-color: grey;
 }
 .hobbies {
     background-color: lightblue;
     color: rgb(94, 94, 94);
     padding: 20px;
     grid-area: hobbies;
-    border-width: 10px;
+    border-width: 3.3px;
     border-left-width:0px;
-    border-style:solid;
-    border-top-color:purple;
-    border-right-color:salmon;
-    border-bottom-color: purple;
+    border-style:dashed;
+    border-color:grey;
 }
 
 aside {
