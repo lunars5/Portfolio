@@ -53,6 +53,26 @@ aside ul {
     list-style-type:none;
 }
 
+.animation {
+    padding-left:33px;
+	animation: move 2s infinite ease-in;
+}
+@keyframes move {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	50% {
+		transform: translate(0, 5vh);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+
+}
+
+
 img.linkedin {
     height: 42px;
     padding:7px;
@@ -91,10 +111,8 @@ main {
     padding: 235px;
     padding-left:50%;
     padding-right:50%;
-    background-image: url("cherryblossam.png");
-    background-repeat: no-repeat;
-    grid-area: main;
 }
+
 
 /*cv css*/
 
@@ -170,13 +188,18 @@ text-decoration: underline;
 /* contact css*/
 
 .links {
-    border-color:white;
-    border:1px;
     padding:20px;
-    margin: 10px;  
-    margin-bottom:30px;
+    margin: 90px;  
     background-color:rgb(61, 61, 61) ;
-    color:pink;
+    color:white;
+}
+
+.information {
+    text-align: center;
+    padding:20px;
+    margin: 90px;  
+    background-color:rgb(61, 61, 61) ;
+    color:white;
 }
 
 form {
@@ -205,3 +228,4 @@ form {
     grid-column: 2;
     }
 
+/*portfolio css*/
