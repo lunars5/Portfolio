@@ -10,7 +10,7 @@ body {
 }
 
 
-#clicked:target nav {display:block;}
+#hover:target nav {display:block;}
 
 
 .shownav {
@@ -28,7 +28,6 @@ body {
     z-index: 10;
 }
 
-
 nav:target {
     position: fixed;
     display: none;
@@ -40,7 +39,6 @@ nav:target {
 
 }
 
-
 nav {
     position: fixed;
     display: none;
@@ -49,8 +47,13 @@ nav {
     left: 50%;
     width: 50%;
     z-index: 1;
-
 }
+
+
+   nav ul li {
+    display:none;
+   }
+
 
 
 header {
@@ -62,19 +65,181 @@ header {
 
 
 main {
-    background-image: url("cherryblossam.png");
-    background-repeat: no-repeat;
+    background-image: url("ref_image_7.png");
+    background-repeat: repeat;
     grid-area: main;
 }
 
 aside {
-
     background-color: pink;
     grid-area: aside;
 }
+
+aside ul {
+    display: block;
+    float: left;
+}
+
+aside ul li {
+    display: inline-block;
+    list-style-type:none;
+}
+
+img.linkedin {
+    height: 42px;
+    padding:7px;
+}
+
+img.github {
+    height: 60px;
+    padding:7px;
+}
+
+img.email {
+    height: 40px;
+    padding:7px;
+}
+
 
 footer {
     background-color:  rgb(61, 61, 61);
     grid-area: footer;
 }
 
+/*cv css*/
+
+.cv {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "profile profile profile profile"
+                         "education education office office"
+                        "skills skills hobbies hobbies";
+}
+
+.profile {
+    text-align: center;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 30px;
+    grid-area: profile;
+    border-width: 2px;
+    border-style: solid;
+    border-color:white;
+}
+
+.education{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 20px;
+    grid-area: education;
+}
+
+.education h2 {
+   text-decoration: underline;
+}
+
+.office h2 {
+text-decoration: underline;
+}
+
+.education h3 {
+text-decoration: underline;
+}
+
+.office h3 {
+text-decoration: underline;
+}
+.office{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 20px;
+    grid-area: office;
+}
+
+.skills {
+    background-color: pink;
+    color: rgb(94, 94, 94);
+    padding: 20px;
+    grid-area: skills;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: hotpink;
+}
+.hobbies {
+    background-color: lightblue;
+    color: rgb(94, 94, 94);
+    padding: 20px;
+    grid-area: hobbies;
+    border-width: 5px; 
+    border-left-width:0px;
+    border-style: dotted;
+    border-color: hotpink;
+}
+
+/* contact css*/
+
+.links {
+    padding:20px;
+    margin: 90px;  
+    background-color:rgb(61, 61, 61) ;
+    color:white;
+}
+
+.information {
+    text-align: center;
+    padding:20px;
+    margin: 90px;  
+    background-color:rgb(61, 61, 61) ;
+    color:white;
+}
+
+form {
+    padding:20px;
+    display: grid;
+    width: 500px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 1em;
+    }
+
+.emailform {
+    border-width: 4px;
+    border-style: dotted;
+    border-color:hotpink;
+    background-color:rgb(61, 61, 61);
+    color: white;
+}
+
+.emailform h2 {
+    padding:20px;
+    text-decoration: underline;
+}
+
+input {
+    background-color:grey;
+    color:white;
+}
+.submit {
+    background-color:grey;
+    grid-column: 2;
+ }
+
+/*portfolio css*/
+
+.portfolio {
+    padding:20px;
+    grid-gap: 1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+
+}
+
+.image {
+   border-width: 2px;
+   border-color: white;
+   width:200px;
+   height:200px;
+    
+}

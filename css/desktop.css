@@ -19,16 +19,24 @@ header {
 
 nav {
     background-color: white;
-    color: black;
     grid-area: nav;
 }
 
+
 nav ul {
+    color:black;
     list-style-type: none;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     text-align: center;
    }
+nav a:visited {
+    color:black;
+}
+
+nav a:hover {
+    color:hotpink;
+}
 
 nav ul ul {
     display: block;
@@ -42,14 +50,13 @@ nav ul ul {
 
    }
 
-aside {
+aside { 
     display:block;
     background-color: pink;
     grid-area: aside;
 }
 
 aside ul {
-
     list-style-type:none;
 }
 
@@ -100,7 +107,7 @@ nav > ul > li:hover ul {
    }
 
 main {
-    background-image: url("cherryblossam.png");
+    background-image: url("ref_image_7.png");
     background-repeat: no-repeat;
     grid-area: main;
 }
@@ -108,9 +115,23 @@ main {
 /*index css*/
 
 .welcome {
-    padding: 235px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 250px;
     padding-left:50%;
     padding-right:50%;
+}
+
+.purpose {
+    padding: 90px;
+    background-color: rgb(58, 58, 58);
+    color:white;
+    margin:0px;
+}
+
+.video {
+
+    margin:0px;
 }
 
 
@@ -194,6 +215,18 @@ text-decoration: underline;
     color:white;
 }
 
+.links a:link {
+    color:white;
+}
+
+.links a:visited {
+    color:white;
+}
+
+.links a:hover {
+    color:hotpink;
+}
+
 .information {
     text-align: center;
     padding:20px;
@@ -212,9 +245,9 @@ form {
     }
 
 .emailform {
-    border-width: 1px;
-    border-style: solid;
-    border-color:white;
+    border-width: 4px;
+    border-style: dotted;
+    border-color:hotpink;
     background-color:rgb(61, 61, 61);
     color: white;
 }
@@ -224,8 +257,28 @@ form {
     text-decoration: underline;
 }
 
+input {
+    background-color:grey;
+    color:white;
+}
 .submit {
+    background-color:grey;
     grid-column: 2;
     }
 
 /*portfolio css*/
+
+.portfolio {
+    padding:20px;
+    grid-gap: 1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+
+}
+
+.image {
+    width:300px;
+    height:300px;
+
+}
