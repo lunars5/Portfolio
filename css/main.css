@@ -1,0 +1,266 @@
+/*consistent layout*/
+body {
+    font-family: roboto;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                        "main main aside"
+                        "footer footer footer";
+}
+
+header {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 20px;
+    grid-area: header;
+}
+
+nav {
+    background-color: white;
+    grid-area: nav;
+}
+
+
+nav ul {
+    color:black;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+   }
+nav a:visited {
+    color:black;
+}
+
+nav a:hover {
+    color:hotpink;
+}
+
+
+aside { 
+    display:block;
+    background-color: pink;
+    grid-area: aside;
+}
+
+aside ul {
+    list-style-type:none;
+}
+
+.animation {
+    padding-left:33px;
+	animation: move 2s infinite ease-in;
+}
+@keyframes move {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	50% {
+		transform: translate(0, 5vh);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+
+}
+
+
+img.linkedin {
+    height: 42px;
+    padding:7px;
+}
+
+img.github {
+    height: 60px;
+    padding:7px;
+}
+
+img.email {
+    height: 40px;
+    padding:7px;
+}
+
+footer {
+    background-color:  rgb(61, 61, 61);
+    grid-area: footer;
+
+}
+
+
+main {
+    background-image: url("ref_image_7.png");
+    background-repeat: no-repeat;
+    grid-area: main;
+}
+
+/*index css*/
+
+.welcome {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 250px;
+    text-align: center;
+}
+
+
+.purpose {
+    text-align: center;
+    padding: 90px;
+    background-color: rgb(58, 58, 58);
+    color:white;
+    margin:0px;
+}
+
+
+
+/*cv css*/
+
+.cv {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "profile profile profile profile"
+                         "education education office office"
+                        "skills skills hobbies hobbies";
+}
+
+.profile {
+    text-align: center;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    padding: 30px;
+    grid-area: profile;
+    border-width: 2px;
+    border-style: solid;
+    border-color:white;
+}
+
+.education{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 20px;
+    grid-area: education;
+}
+
+.education h2 {
+   text-decoration: underline;
+}
+
+.office h2 {
+text-decoration: underline;
+}
+
+.education h3 {
+text-decoration: underline;
+}
+
+.office h3 {
+text-decoration: underline;
+}
+.office{
+    background-color: rgb(61, 61, 61);
+    color: white;
+    padding: 20px;
+    grid-area: office;
+}
+
+.skills {
+    background-color: pink;
+    color: rgb(94, 94, 94);
+    padding: 20px;
+    grid-area: skills;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: hotpink;
+}
+.hobbies {
+    background-color: lightblue;
+    color: rgb(94, 94, 94);
+    padding: 20px;
+    grid-area: hobbies;
+    border-width: 5px; 
+    border-left-width:0px;
+    border-style: dotted;
+    border-color: hotpink;
+}
+
+/* contact css*/
+
+.links {
+    padding:20px;
+    margin: 90px;  
+    background-color:rgb(61, 61, 61) ;
+    color:white;
+}
+
+.links a:link {
+    color:white;
+}
+
+.links a:visited {
+    color:white;
+}
+
+.links a:hover {
+    color:hotpink;
+}
+
+.information {
+    text-align: center;
+    padding:20px;
+    margin: 90px;  
+    background-color:rgb(61, 61, 61) ;
+    color:white;
+}
+
+form {
+    padding:20px;
+    display: grid;
+    width: 500px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    grid-gap: 1em;
+    }
+
+.emailform {
+    border-width: 4px;
+    border-style: dotted;
+    border-color:hotpink;
+    background-color:rgb(61, 61, 61);
+    color: white;
+}
+
+.emailform h2 {
+    padding:20px;
+    text-decoration: underline;
+}
+
+input {
+    background-color:grey;
+    color:white;
+}
+.submit {
+    background-color:grey;
+    grid-column: 2;
+    }
+
+/*portfolio css*/
+
+.portfolio {
+    padding:20px;
+    grid-gap: 1em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+
+}
+
+.image {
+    width:300px;
+    height:300px;
+
+}
