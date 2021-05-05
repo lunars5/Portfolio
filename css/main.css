@@ -17,28 +17,6 @@ header {
     grid-area: header;
 }
 
-nav {
-    background-color: white;
-    grid-area: nav;
-}
-
-
-nav ul {
-    color:black;
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    text-align: center;
-   }
-nav a:visited {
-    color:black;
-}
-
-nav a:hover {
-    color:hotpink;
-}
-
-
 aside { 
     display:block;
     background-color: pink;
@@ -48,26 +26,6 @@ aside {
 aside ul {
     list-style-type:none;
 }
-
-.animation {
-    padding-left:33px;
-	animation: move 2s infinite ease-in;
-}
-@keyframes move {
-	0% {
-		transform: translate(0, 0);
-	}
-
-	50% {
-		transform: translate(0, 5vh);
-	}
-
-	100% {
-		transform: translate(0, 0);
-	}
-
-}
-
 
 img.linkedin {
     height: 42px;

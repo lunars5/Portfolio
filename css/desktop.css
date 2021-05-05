@@ -17,27 +17,26 @@ header {
     grid-area: header;
 }
 
-nav {
+.menu {
     background-color: white;
     grid-area: nav;
 }
 
 
-nav ul {
+.menu ul {
     color:black;
     list-style-type: none;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     text-align: center;
    }
-nav a:visited {
+.menu a:visited {
     color:black;
 }
 
-nav a:hover {
+.menu a:hover {
     color:hotpink;
 }
-
 
 aside { 
     display:block;
